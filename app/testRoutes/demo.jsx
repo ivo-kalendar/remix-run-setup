@@ -1,6 +1,5 @@
-import { NavLink } from "@remix-run/react";
-import React from "react";
-
+import DivNavbar from "../elements/div.navbar";
+import LinkNavbar from "../elements/link.navbar";
 
 export const meta = () => {
     return [{ title: "Remix App" }, { name: "description", content: "Welcome to Remix!" }];
@@ -8,11 +7,11 @@ export const meta = () => {
 
 export default function DemoPage() {
     return (
-        <div className="text-white bg-slate-900 font-sans p-4">
+        <DivNavbar>
             <h1 className="text-3xl">Welcome to Remix</h1>
             <p>
-                Navigate to <NavLink to="/">Home</NavLink>
+                Navigate to <LinkNavbar to="/">Home</LinkNavbar>
             </p>
-        </div>
+        </DivNavbar>
     );
 }
