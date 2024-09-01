@@ -4,8 +4,12 @@ export default function SearchInput() {
     return (
         <div className="relative grid h-ful">
             <input
-                type="text"
+                type="search"
+                aria-label="Search users"
+                id="search-users"
+                name="search-users"
                 placeholder="Search"
+                autoComplete="off"
                 className="
                     pl-8 
                     rounded-lg 

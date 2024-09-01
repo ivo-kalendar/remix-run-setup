@@ -5,6 +5,8 @@ import SearchInput from "../SearchInput";
 export default function HeaderForm() {
     return (
         <Form 
+            id="search-form"
+            role="search"
             className="
                 border 
                 border-slate-300 

@@ -1,12 +1,7 @@
-export default function UsersBoard() {
+export default function UsersBoard({ children }) {
     return (
         <div className="flex flex-col items-center">
-            <h1>Board</h1>
-            <h1>Board</h1>
-            <h1>Board</h1>
-            <h1>Board</h1>
-            <h1>Board</h1>
-            <h1>Board</h1>
+            {children}
         </div>
     )
 }
